@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <script src="https://kit.fontawesome.com/8ad974e593.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/ico/dangky.ico">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/swal/sweetalert2.min.css">
+</head>
+<body>
+    <header>
+        <!-- begin: logo -->
+        <div class="logo">
+            <i href="#top" class="fa-solid fa-tractor"></i>
+            <span>CLEVERFOOD</span>
+        </div>
+        <!-- end: logo -->
+        <!-- begin: Nav -->
+        <ul id="nav">
+            <li><a href="trangchu.html">TRANG CHỦ</a></li>
+            <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+            <li><a href="shop.html">
+                           CỬA HÀNG
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="">RAU CỦ</a></li>
+                    <li><a href="">TRÁI CÂY</a></li>
+                    <li><a href="">ĐỒ UỐNG</a></li>
+                    <li><a href="">ĐỒ KHÔ</a></li>
+                </ul>
+            </li>
+            <li><a href="tintuc.html">TIN TỨC</a></li>
+            <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            <li class="no-user" ><a href="login.html">ĐĂNG NHẬP</a></li>
+            <li class="no-user" ><a href="#">ĐĂNG KÝ</a></li>
+        </ul>
+        <!-- end: Nav -->
+        <div class="user">
+            
+        </div>
+        <!-- begin: search button  -->
+        <div class="search-btn js-search">
+            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!-- end: search button  -->
+        <!-- end: search button  -->
+        <div class="menu-mobile-btn">
+            <i class="menu-icon fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main id="main-form">
+        <div class="main">
+            <div class="img-form">
+                <i class="fa-solid fa-wheat-awn"></i>
+            </div>
+            <div class="form ">
+              <h3 class="heading">ĐĂNG KÝ</h3>
+      
+              <div class="spacer"></div>
+      
+              <div class="form-group">
+                <label for="usernameReg" class="form-label">Username</label>
+                <input id="usernameReg" name="usernameReg" class="register" type="text" placeholder="VD: Nhi97kk" required>
+                <span class="error-msg"></span>
+              </div>
+      
+              <div class="form-group">
+                <label for="emailReg" class="form-label">Email</label>
+                <input id="emailReg" name="emailReg" class="register" type="email" placeholder="VD: email@domain.com" required>
+                <span class="error-msg"></span>
+              </div>
+      
+              <div class="form-group">
+                <label for="passwordReg" class="form-label">Mật khẩu</label>
+                <input id="passwordReg" name="passwordReg" class="register" type="password" placeholder="Nhập mật khẩu (8 kí tự trở lên)" required>
+                <span class="error-msg"></span>
+              </div>
+      
+              <div class="form-group">
+                <label for="repasswordReg" class="form-label">Nhập lại mật khẩu</label>
+                <input id="repasswordReg" name="repasswordReg" class="register" placeholder="Nhập lại mật khẩu" type="password" required>
+                <span class="error-msg"></span>
+            </div>
+      
+              <button onclick="createAccount()" class="form-submit">Đăng ký</button>
+            </form>      
+          </div>
+    </main>
+    <footer>
+        <div class="info">
+            <div class="info-logo">
+                <i class="fa-solid fa-tractor"></i>
+                <span>CONTACT</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>(+84) 123 456 789</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>clerverfood@gmail.com</span>
+            </div>
+            <div class="info-links">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>           
+
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; 2022</p>
+        </div>
+        <div class="top">
+            <a href="#top"><i class="fa-solid fa-plane-up"></i></a> 
+        </div>
+    </footer>
+    <div class="modal js-modal">
+        <div class="modal-close js-modal-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="modal-container js-modal-container">
+            <input type="text" placeholder="Tìm kiếm....">
+            <button type="submit"><i class="search-icon fa-solid fa-magnifying-glass"></i></button>
+        </div>        
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/swal/sweetalert2.all.min.js"></script>
+    <script src="./assets/swal/sweetalert2.min.js"></script>
+</body>
+</html>

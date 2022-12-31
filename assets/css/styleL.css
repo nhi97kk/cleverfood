@@ -1,0 +1,625 @@
+/* Reset CSS */
+
+/* header */
+
+/* end header */
+
+/* main Trang Chu*/
+.slides{
+    display: flex;
+    justify-content: space-evenly;
+}
+@keyframes down{
+    from{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+#aside-image-right {
+    cursor: pointer;
+    animation: down ease 2s ;
+}
+#aside-image-right2 {
+    cursor: pointer;
+    animation: down ease 2s ;
+}
+#aside-image-right img{
+    width: 100%;
+}
+#aside-image-right2 img{
+    width: 120%;
+}
+
+#aside-1-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+    align-items: center;
+}
+button.clq{
+    position: absolute;
+    top: 50%;
+    width: fit-content;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 30px;
+}
+.carousel-indicators{
+    bottom: 6rem;
+}
+.carousel-caption{
+    bottom: 10rem;
+}
+
+.p {
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(134, 186, 9);
+    color: whitesmoke;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+strong {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.main-span {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 190px;
+    height: 50px;
+    font-size: 25px;
+    background-color: rgb(134, 186, 9);
+    border: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+    color: rgb(134, 186, 9);
+    background-color: whitesmoke;
+}
+
+.space {
+    min-height: 105vh;
+    width: 100%;
+    position: relative;
+}
+
+.grid-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#grid-template {
+    display: grid;
+    grid-template: auto auto/ 25% 24% 24% 24%;
+    grid-gap: 1%;
+}
+
+.grid-container-1 {
+    grid-row: 1 / 3;
+}
+
+.grid-container-6 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+}
+
+.footer-img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container-1,
+.grid-container-2,
+.grid-container-3,
+.grid-container-4,
+.grid-container-5,
+.grid-container-6 {
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 2s ease;
+}
+
+.footer-img:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border-radius: 5px;
+}
+
+#position-middle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -7%;
+}
+
+/* .middle-grid {
+    display: grid;
+    grid-template: 310px 310px / 590px 590px;
+    grid-gap: 25px;
+} */
+
+.middle-grid div {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.middle-img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.hover {
+    overflow: hidden;
+    width: 48%;
+    margin: 10px auto;
+}
+
+.middle-img:hover {
+    transform: scale(1.1);
+}
+
+/* end main Trang Chu*/
+
+/* main Gioi Thieu */
+
+.bg-home {
+    width: 100%;
+    height: 180px;
+    background-image: url(../img/gioithieu-bg.jpg);
+    background-position: 0% 0%;
+    font-size: 16px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-shadow: 2px 2px black;
+}
+
+.first-info {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.blur {
+    color: #ccc;
+    margin-right: 5px;
+}
+
+.link {
+    cursor: pointer;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.bg-home-info {
+    margin-top: 60px;
+    height: 150px;
+    width: 100%;
+    font-size: 60px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+#main-bg-images {
+    width: 80%;
+    height: 650px;
+    margin: 10px 10%;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template: 1fr / 310px 1fr 310px;
+    font-size: 16px;
+}
+
+#main-bg-images img {
+    width: 70px;
+    background-color: transparent;
+}
+
+#main-bg-images #main-bg-middle {
+    width: 100%;
+    height: 380px;
+    margin-top: 25%;
+}
+
+.aside-pic {
+    margin: 30px 35% 50px;
+}
+
+.aside-infor {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+/* end main Gioi Thieu */
+
+/* main Lien He */
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("../img/banner30.jpg") no-repeat center;
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.contact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left {
+    background: url("../img/product-11-470x470.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+.right h2 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+.right h2:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+.field:focus {
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: #fff;
+}
+
+/* end main Lien He */
+
+/* main Tin tuc */
+
+#tintuc-main {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.bg-tintuc-home {
+        height: 90px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #777;
+    text-shadow: 2px 1px #ccc;
+}
+
+.main-tintuc-wrapper {
+    width: 98%;
+    margin: 0px 1%;
+    display: grid;
+    grid-template: 65% / 25% 1fr;
+    grid-gap: 2%;
+}
+
+.input-tintuc-aside {
+    height: 50px;
+    background-color: rgb(134, 186, 9);
+    color: whitesmoke;
+    border-radius: 10px;
+    width: 85%;
+    margin-left: 10px;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+/* .timkiem {
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    border-radius: 10px 0 0 10px;
+} */
+
+/* .fa-magnifying-glass {
+    width: 15%;
+    height: 90%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    right: 2px;
+    cursor: pointer;
+} */
+
+.timkiem:hover {
+    /* border-color: whitesmoke; */
+    border: none;
+    opacity: 0.8;
+}
+
+/* .fa-magnifying-glass:hover {
+    opacity: 0.8;
+    color: whitesmoke;
+} */
+
+.timkiem:focus {
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: #fff;
+}
+
+.input-tintuc-aside:focus {
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: #fff;
+}
+
+.aside-tintuc-header {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(134, 186, 9);
+    color: whitesmoke;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.bai-viet-moi {
+    margin-left: 30px;
+}
+
+.aside-tintuc-infor img {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.aside-tintuc-infor {
+    font-size: 16px;
+    width: 100%;
+}
+
+#aside-information {
+    height: 60px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(134, 186, 9);
+    background-color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    color: rgb(134, 186, 9);
+    border-radius:10px;
+    padding: 5px;
+}
+
+#tintuc-right-grid {
+    display: grid;
+    grid-template: 80% 50% / 32% 31% 32%;
+    grid-gap: 2%;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+.cards {
+    background-color: rgb(250, 251, 249);
+    border-radius: 15px;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.card {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#aside-information:hover {
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    background-color: rgb(134, 186, 9);
+    color: white;
+}
+
+.card img {
+    border-radius: 10px;
+    transition: all 0.8 ease-out;
+}
+
+.card-title {
+    color: rgb(67, 57, 57);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card-information {
+    color: rgb(57, 49, 49);
+    border-top: 1px solid #212220;
+    padding-top: 20px;
+    margin-left: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 19px 15px rgba(0, 0, 0, 0.19);
+}
+
+.cards:hover {
+    background-color: rgb(138, 238, 133);
+    color: #fff;
+    box-shadow: 0px 0px 19px 10px rgba(0, 0, 0, 0.19);
+}
+
+.card-title:hover,
+.card-information:hover {
+    color: aliceblue;
+}
+
+/* end main Tin Tuc */
+
+/* trang phu 1 */
+
+.trang-tintuc-1 {
+    margin-top: 150px;
+    font-size: 16px;
+}
+.tintuc1-grid {
+    height: fit-content;
+    line-height: 1.4;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.1);
+}
+
+.tintuc1-grid:hover {
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.tintuc-anhbia {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#title-tintuc-1 {
+    font-size: 30px;
+}
+
+#back-to-previous {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tintuc-footer-lienhe button {
+    font-size: 16px;
+    height: 100%;
+    width: 100px;
+    border-radius: 5px;
+    text-transform: none;
+    height: 40px;
+    margin-right: 5px;
+}
+
+#tintuc-footer-lienhe button:hover {
+    opacity: .8;
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.1);
+}
+/*end Trang phu 1 */
+
+/* footer */
+
+.footer-margin {
+    margin-top: 40px;
+}
+
+/* modal search  */
+
+/* top  */
+
+/* main  */
+main {
+    min-height: 50vh;
+}

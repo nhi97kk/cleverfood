@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <script src="https://kit.fontawesome.com/8ad974e593.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/ico/shop.ico">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/swal/sweetalert2.min.css">
+<body>
+    <header>
+        <!-- begin: logo -->
+        <div class="logo">
+            <i href="#top" class="fa-solid fa-tractor"></i>
+            <span>CLEVERFOOD</span>
+        </div>
+        <!-- end: logo -->
+        <!-- begin: Nav -->
+        <ul id="nav">
+            <li><a href="trangchu.html">TRANG CHỦ</a></li>
+            <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+            <li><a href="shop.html">
+                           CỬA HÀNG
+                </a>
+                <ul class="subnav">
+                    <li><a href="">RAU CỦ</a></li>
+                    <li><a href="">TRÁI CÂY</a></li>
+                    <li><a href="">ĐỒ UỐNG</a></li>
+                    <li><a href="">ĐỒ KHÔ</a></li>
+                </ul>
+            </li>
+            <li><a href="tintuc.html">TIN TỨC</a></li>
+            <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            <li class="no-user"><a href="login.html">ĐĂNG NHẬP</a></li>
+            <li class="no-user"><a href="reg.html">ĐĂNG KÝ</a></li>
+        </ul>
+        <!-- end: Nav -->
+        <div class="user">
+            
+        </div>
+        <!-- begin: search button  -->
+        <div class="search-btn js-search">
+            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!-- end: search button  -->
+        <!-- end: search button  -->
+        <div class="menu-mobile-btn">
+            <i class="menu-icon fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <div class="catelory">
+                <div class="catelory-main">
+                    <div class="title">DANH MỤC SẢN PHẨM</div>
+                    <ul class="list">
+                        <li onclick="showrau()" class="odd list-rau kc" >Rau củ</li>
+                        <li onclick="showtraicay()" class="list-traicay kc">Trái cây</li>
+                        <li onclick="showdouong()" class="odd list-uong kc" >Đồ uống</li>
+                        <li onclick="showkho()" class="list-kho kc">Đồ khô</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <div class="info-logo">
+                <i class="fa-solid fa-tractor"></i>
+                <span>CONTACT</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>(+84) 123 456 789</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>clerverfood@gmail.com</span>
+            </div>
+            <div class="info-links">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>           
+
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; 2022</p>
+        </div>
+        <div class="top">
+            <a href="#top"><i class="fa-solid fa-plane-up"></i></a> 
+        </div>
+    </footer>
+    <div class="modal js-modal">
+        <div onclick="outsearch()" class="modal-close js-modal-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="modal-container js-modal-container">
+            <div class="search_wrapper">
+                <input class="search-input" placeholder="Nhập nội dung cần tìm" type="text">
+                <button class="search_button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div class="search_result"></div>
+    </div>
+    <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/swal/sweetalert2.all.min.js"></script>
+    <script src="./assets/swal/sweetalert2.min.js"></script>
+</body>
+</html>
